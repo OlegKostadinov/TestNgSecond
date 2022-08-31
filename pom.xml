@@ -5,13 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>GITTEST</artifactId>
+    <artifactId>TESTNGSECOND</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
+
+
+
+
     </properties>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -39,10 +44,8 @@
 
 
 
+
     </dependencies>
-
-
-
     <build>
         <pluginManagement>
             <plugins>
@@ -58,11 +61,11 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
 
-                    <!-- <configuration>
-                         <suiteXmlFiles>
-                             <suiteXmlFile>testng.xml</suiteXmlFile>
-                         </suiteXmlFiles>
-                     </configuration> -->
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
 
                 </plugin>
 
@@ -79,7 +82,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 </project>

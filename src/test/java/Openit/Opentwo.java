@@ -13,7 +13,7 @@ public class Opentwo  {
     WebDriver driver;
 
     @BeforeMethod
-    public  void launch (){
+    public  void launch () throws InterruptedException {
 
 
 
@@ -21,29 +21,33 @@ public class Opentwo  {
         driver = new ChromeDriver();
         driver.get("https://www.python.org/");
         driver.manage().window().maximize();
+        Thread.sleep(1000);
 
 
     }
     @Test
 
-    public void wwwget (){
+    public void wwwget () throws InterruptedException {
 
         String h = driver.getTitle();
         System.out.println(h);
+        Thread.sleep(1000);
 
     }
     @Test
 
-    public void urlget  (){
+    public void urlget  () throws InterruptedException{
 
        String a = driver.getCurrentUrl();
         System.out.println(a);
+        Thread.sleep(1500);
 
     }
     @Test
 
-    public void field(){
+    public void field() throws InterruptedException {
        driver.findElement(By.xpath("//*[@id=\"submit\"]")).click();
+       Thread.sleep(1500);
 
     }
     @Test
